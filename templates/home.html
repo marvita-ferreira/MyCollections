@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Início - MyCollections{% endblock %}
+{% block content %}
+<h2>Bem-vinda ao seu universo de coleções, Marvita!</h2>
+<p>Explore suas coleções de arte, moedas, filmes, livros e muito mais.</p>
+<p><a href="{{ url_for('db_list') }}">Ver todas as coleções</a></p>
+{% endblock %}

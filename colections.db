@@ -1,0 +1,7 @@
+CREATE TABLE Art (
+    id INTEGER PRIMARY KEY,
+    title TEXT,
+    author TEXT,
+    year INTEGER
+);
+INSERT INTO Art (title, author, year) VALUES ("A Noite Estrelada", "Van Gogh", 1889);

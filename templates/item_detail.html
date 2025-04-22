@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}{{ name }} - Itens{% endblock %}
+{% block content %}
+<h2>Itens da Coleção: {{ name }}</h2>
+{% if items %}
+    {% for item in items %}
+        <div class="collection-item">
+            {% for key, value in item.items() %}
+                <strong>{{ key }}:</strong> {{ value }}<br>
+            {% endfor %}
+        </div>
+    {% endfor %}
+{% else %}
+    <p>Nenhum item encontrado.</p>
+{% endif %}
+{% endblock %}
